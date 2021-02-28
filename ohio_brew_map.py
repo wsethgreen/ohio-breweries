@@ -1,6 +1,5 @@
 import plotly.express as px
 from data_mining import ohio_brew_df
-import plotly.io as pio
 
 # Create the scatter plot
 fig = px.scatter_mapbox(ohio_brew_df, lat=ohio_brew_df.latitude, lon=ohio_brew_df.longitude, 

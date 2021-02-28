@@ -6,7 +6,7 @@ from data_mining import ohio_brew_df, ohio_brew_no_geo_df
 app = Flask(__name__)
 
 # Create variables to display how many breweries there are in Ohio
-# Including how many breweries have geo locations and how many do not 
+# Including how many breweries have geo locations, and how many do not 
 # (for informational purposes for the user)
 total_breweries = len(ohio_brew_df) + len(ohio_brew_no_geo_df)
 breweries_with_geo = len(ohio_brew_df)
@@ -84,13 +84,14 @@ def search():
 # Create about route
 @app.route('/about', methods=["GET", "POST"])
 def about():
-    return render_template('about.hmtl')
+    return render_template('about.html')
 
 
 # Create the route to host the map of the ohio breweries
 @app.route('/brewmap', methods=["GET", "POST"])
 def brewmap():
     return render_template('ohio_brew_map.html')
+
 
 if __name__ == '__main__':
     app.run()
