@@ -3,7 +3,6 @@
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
     color: #f2f3f4;
-    background-color: #444444;
     text-decoration: none;
     box-sizing: border-box;
     margin: 0;
@@ -14,8 +13,8 @@
     display: flex;
     justify-content: space-between;
     justify-items: center;
-    background-color: #000000;
-    border-bottom: 2px solid #636efa;
+    background-color: #2f1108;
+    border-bottom: 2px solid #ab804f;
 }
 
 .header__logo {
@@ -24,24 +23,46 @@
 }
 
 .header__link {
-    background-color: #000000;
+    background-color: #2f1108;
+    color: #ab804f;
     padding: 10px;
     margin: auto 5px auto 5px;
     font-size: 1.1em;
 }
 
 .header__link:hover {
-    color: #636efa;
+    color: #863309;
     transition: all 0.3s;
 }
 
 .header__title {
-    background-color: #000000;
+    background-color: #2f1108;
     margin-top: auto;
     margin-bottom: auto;
     padding: 10px;
     font-size: 1.3em;
-    color: #636efa;
+    color: #ab804f;
+}
+
+html {
+    background: url("/static/images/beer-bg.jpg");
+    background-position: center center; 
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.body__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+}
+
+.content__container {
+    flex: 1 0 auto;
 }
 
 .intro__container {
@@ -53,33 +74,31 @@
 }
 
 .intro__blurb {
-    background-color: #000000;
+    background-color: rgba(0, 0, 0, .75);
     margin: 10px auto 10px auto;
     padding: 5px;
     border-radius: 5px;
 }
 
 .open__brewery__link {
-    background-color: inherit;
     font-size: inherit;
-    color: #636efa;
+    color: #ab804f;
 }
 
 .open__brewery__link:hover {
-    color: #444444;
+    color: #863309;
     text-decoration: underline;
     transition: all 0.3s;
 }
 
 .intro__emphasize {
     font-size: inherit;
-    background-color: #000000;
-    color: #636efa;
+    color: #ab804f;
 }
 
 .intro__close {
-    background-color: #000000;
-    color: #636efa;
+    background-color: rgba(0, 0, 0, .75);
+    color: #ab804f;
     border-radius: 5px;
     width: 40%;
     padding: 5px;
@@ -89,16 +108,20 @@
 }
 
 .brew_map__container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 20px;
+    margin: 30px 0 30px 0;
+    width: 90%;
 }
 
 #igraph {
     height: 500px;
-    width: 90%;
-    margin: 30px auto 30px auto;
+    width: 350px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#db8153e1-81ee-4ee9-8ac7-439f17067f6c {
+    margin: 0 auto 0 auto;
 }
 
 .plotly-graph-div.js-plotly-plot {
@@ -116,7 +139,7 @@
 
 .search__input {
     background-color: #f2f3f4;
-    color: black;
+    color: #2f1108;
     width: 80%;
     height: 30px;
     margin: 0 auto 0 auto;
@@ -128,13 +151,13 @@
     margin: 30px auto 0 auto;
     height: 30px;
     width: 60%;
-    border: 2px solid #636efa;
-    background-color: #000000;
+    border: 2px solid #ab804f;
+    background-color: #2f1108;
     border-radius: 5px;
 }
 
 .search__button:hover {
-    color: #636efa;
+    color: #ab804f;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -162,12 +185,12 @@
 }
 
 .brew__name {
-    background-color: #000000;
-    border-top: 2px solid #636efa;
-    border-left: 2px solid #636efa;
-    border-right: 2px solid #636efa;
+    background-color: #2f1108;
+    border-top: 2px solid #ab804f;
+    border-left: 2px solid #ab804f;
+    border-right: 2px solid #ab804f;
     border-radius: 5px 5px 0 0;
-    color: #636efa;
+    color: #ab804f;
     text-align: center;
     font-size: 1.2em;
     padding: 5px;
@@ -175,51 +198,69 @@
 
 .brew__address, .brew__phone {
     padding: 10px;
-    background-color: #000000;
-    border-left: 2px solid #636efa;
-    border-right: 2px solid #636efa;
+    background-color: #2f1108;
+    border-left: 2px solid #ab804f;
+    border-right: 2px solid #ab804f;
 }
 
 .brew__url__container {
     border-radius: 0 0 5px 5px;
-    border-left: 2px solid #636efa;
-    border-right: 2px solid #636efa;
-    border-bottom: 2px solid #636efa;
+    border-left: 2px solid #ab804f;
+    border-right: 2px solid #ab804f;
+    border-bottom: 2px solid #ab804f;
     padding: 10px;
-    background-color: #000000;
+    background-color: #2f1108;
 }
 
 .brew__url {
-    background-color: #000000;
+    background-color: #2f1108;
 }
 
 .brew__url:hover {
-    color: #636efa;
+    color: #ab804f;
     transition: all 0.3s;
 }
 
+.about__container {
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px auto 30px auto;
+}
+
+.about__title {
+    width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 5px;
+    font-size: 1.25em;
+    color: #ab804f;
+    text-align: center;
+}
+
 .footer__container {
-    background-color: #000000;
+    background-color: #2f1108;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 5%;
-    border-top: 2px solid #636efa;
+    border-top: 2px solid #ab804f;
 }
 
 .footer__link {
-    background-color: #000000;
+    background-color: #2f1108;
     font-size: 0.8em;
 }
 
 .footer__link:hover {
-    color: #636efa;
+    color: #ab804f;
     transition: all 0.3s;
 }
 
 .footer__copyright {
-    background-color: #000000;
+    background-color: #2f1108;
     font-size: 0.8em;
 }
 
@@ -240,6 +281,15 @@
         width: 90%;
         padding: 10px;
         font-size: 1.2em;
+    }
+
+    #igraph {
+        width: 90%;
+    }
+
+    .about__title {
+        width: 60%;
+        font-size: 1.4em;
     }
 
     .search__input {
@@ -267,8 +317,8 @@
 @media (min-width: 767px) {
 
     .header__logo {
-        height: 75px;
-        width: 75px;
+        height: 60px;
+        width: 60px;
     }
 
     .header__title {
@@ -295,6 +345,15 @@
         width: 33%;
     }
 
+    #igraph {
+        width: 700px;
+    }
+
+    .about__title {
+        width: 50%;
+        font-size: 1.5em;
+    }
+
     .search__input {
         width: 50%;
         height: 40px;
@@ -315,8 +374,8 @@
 @media (min-width: 980px) {
 
     .header__logo {
-        height: 75px;
-        width: 75px;
+        height: 60px;
+        width: 60px;
     }
 
     .header__title {
@@ -340,6 +399,16 @@
         font-size: 1.75em;
         width: 33%;
     }
+
+    #igraph {
+        width: 700px;
+    }
+
+    .about__title {
+        width: 40%;
+        font-size: 1.5em;
+    }
+
 
     .search__input {
         width: 50%;
@@ -373,8 +442,8 @@
 @media (min-width: 1200px) {
 
     .header__logo {
-        height: 75px;
-        width: 75px;
+        height: 60px;
+        width: 60px;
     }
 
     .header__title {
@@ -398,6 +467,15 @@
     .intro__close {
         font-size: 1.75em;
         width: 20%;
+    }
+
+    #igraph {
+        width: 700px;
+    }
+
+    .about__title {
+        width: 40%;
+        font-size: 1.6em;
     }
 
     .search__input {
